@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+  scroll-behavior: smooth;
+}
+nav {
+  background-color: #f0f0f0;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+.content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+}
+.content a {
+  position: relative;
+  text-transform: capitalize;
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px 0;
+  transition-duration: 0.5s;
+  transition-property: color;
+  color: #3a6cf4;
+}
+.content ul li a::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #3a6cf4;
+  transition-duration: 0.5s;
+  transition-property: width;
+}
+ul li a:hover::before {
+  width: 100%;
+}
+ul li a:hover {
+  color: #601cfc;
+}
+.content .logo {
+  font-size: 1.8em;
+  font-weight: 700;
+}
+.content ul {
+  display: flex;
+}
+.content ul li {
+  list-style-type: none;
+
+  margin-left: 20px;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+@media (max-width: 640px) {
+  body {
+    font-size: 6.5px;
+  }
+}
+.body-Sction {
+  background-color: black;
+  min-height: 93.1vh;
+  width: 100%;
+}
+.content-body {
+  min-height: 93.1vh;
+  width: 100%;
+  background-image: url("../MyPhoto/MainPhoto1.jpg");
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+.content-body h1,
+.content-body p,
+.content-body pre,
+.content-body .social-media {
+  width: 100%;
+}
+.content-body p.Hello-Text {
+  color: #fff;
+  font-size: 1.4em;
+  font-weight: 500;
+  text-transform: capitalize;
+  position: relative;
+}
+.content-body p.Hello-Text::after {
+  content: "";
+  color: #3a6cf4;
+  position: absolute;
+  animation-name: typing;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+@keyframes typing {
+  0% {
+    content: " |";
+  }
+  5% {
+    content: " r|";
+  }
+  10% {
+    content: " ro|";
+  }
+  15% {
+    content: " ro7|";
+  }
+  20% {
+    content: " ro7i|";
+  }
+  25% {
+    content: " ro7im|";
+  }
+  30% {
+    content: " ro7im |";
+  }
+  35% {
+    content: " ro7im g|";
+  }
+  40% {
+    content: " ro7im gh|";
+  }
+  50% {
+    content: " ro7im gha|";
+  }
+  60% {
+    content: " ro7im ghan|";
+  }
+  70% {
+    content: " ro7im ghane|";
+  }
+  80% {
+    content: " ro7im ghanem|";
+  }
+  90% {
+    content: " ro7im ghanem.|";
+  }
+  100% {
+    content: " ro7im ghanem..|";
+  }
+}
+.content-body h1 {
+  color: #3a6cf4;
+  font-size: 2.5em;
+  font-weight: 800;
+  text-transform: capitalize;
+}
+.content-body .about {
+  color: #fff;
+  font-size: 1.4em;
+  font-weight: 500;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+.content-body .btn-button {
+  background-color: #3a6cf4;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 600;
+  text-transform: capitalize;
+  padding: 10px 20px;
+  border-radius: 15px;
+  transition-duration: 0.5s;
+  transition-property: scale;
+}
+.content-body .btn-button:hover {
+  scale: 1.1;
+}
+.content-body .social-media a {
+  display: inline-block;
+  color: #fff;
+  font-size: 2em;
+  margin-right: 20px;
+}
+/* body {
+  height: 9000px;
+} */
